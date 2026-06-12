@@ -101,18 +101,18 @@
               </div>
 
               <!-- Email Input -->
-              <div class="form-group" :class="{ 'has-error': errors.email }">
-                <label for="email" class="form-label">Alamat Email *</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  v-model="formData.email" 
-                  class="form-control" 
-                  placeholder="contoh@email.com"
-                  @input="clearError('email')"
-                />
-                <span v-if="errors.email" class="error-msg">{{ errors.email }}</span>
-              </div>
+                <div class="form-group" :class="{ 'has-error': errors.email }">
+                  <label for="email" class="form-label">Alamat Email *</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    v-model="formData.email" 
+                    class="form-control" 
+                    placeholder="contoh@email.com"
+                    @input="clearError('email')"
+                  />
+                  <span v-if="errors.email" class="error-msg">{{ errors.email }}</span>
+                </div>
 
               <!-- Phone Input -->
               <div class="form-group" :class="{ 'has-error': errors.phone }">
